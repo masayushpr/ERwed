@@ -7,6 +7,20 @@
         document.getElementById("autoplay").play();
     }
 </script>
+
+<script> 
+    unmuteButton.addEventListener('click', function(){
+        audio.muted = false;
+    })
+    window.onload = function(){
+        document.getElementById("autoplay").play();
+    }
+  function play() {
+    var audio = document.getElementById("audio");
+    audio.volume = 0.5;
+    audio.play();
+}
+</script>
 </head>
 <body>
                 <audio autoplay id="autoplay">
