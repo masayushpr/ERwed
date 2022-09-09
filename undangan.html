@@ -70,28 +70,9 @@
     }
 </style>
 
-<script> 
-    // unmuteButton.addEventListener('click', function(){
-    //     audio.muted = false;
-    // })
-    // window.onload = function(){
-    //     document.getElementById("autoplay").play();
-    // }
-//   function play() {
-//     var audio = document.getElementById("audio");
-//     audio.volume = 0.5;
-//     audio.play();
-// }
-</script>
 
 </head>
 <body id="page-top">
-
-    <!-- <audio autoplay id="audio">
-                    <source src="assets/audio/wedding.mp3" type="audio/mp3">
-                    </audio> -->
-    <!-- Navigation-->
-
     <!-- audio button -->
     <div>
         <button class="btn-floating audio">
@@ -100,12 +81,14 @@
             left: 50%;
             transform: translate(-50%, -50%); " id="unmuteButton"></i>
             <span>
-                <audio id="audio">
+                <audio controls id="audio">
                     <source src="assets/audio/wedding.mp3" type="audio/mpeg">
                     </audio>
                     <script type="text/javascript">
                         setTimeout(function(){
+                            audio.volume = 0.5;
                             document.getElementById("audio").play();
+
                         })
                     </script>
                 </span>
@@ -130,7 +113,7 @@
         <section class="undangan-section text-center" id="undangan"> 
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8" style="border: 5px solid white; border-radius: 5px; background:rgba(0,0,0, 0.3);">
+                    <div class="col-lg-8" style="border: 5px solid white; border-radius: 5px; background:rgba(0,0,0, 0.8);">
                         <p class="text-50" style="color: #9c851e; padding-top: 30px;">Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala, insyaaAllah kami akan menyelenggarakan acara : </p>
                         <h4 class="text mb-2" style="color: #9c851e;">Akad & Resepsi Pernikahan</h4>
                         <img src="assets/img/date.png" style="max-width: 100%;
@@ -155,7 +138,7 @@
                         <div style="padding: 30px;"></div>
 
                         <div class="social d-flex justify-content-center" style="padding-bottom: 10px;">
-                            <i><a class="fas fa-map-marker-alt" href="https://www.google.com/maps/place/SD+Negeri+Pasir+Gombong+01/@-6.274003,107.151809,7z/data=!4m5!3m4!1s0x0:0x3ba757dd565cdd58!8m2!3d-6.2740615!4d107.1517963?hl=id" style="width: 50px;"></a></i>
+                            <a href="https://www.google.com/maps/place/SD+Negeri+Pasir+Gombong+01/@-6.274003,107.151809,7z/data=!4m5!3m4!1s0x0:0x3ba757dd565cdd58!8m2!3d-6.2740615!4d107.1517963?hl=id" style="width: 50px;"><i class="fas fa-map-marker-alt"></i></a>
                         </div>
                     </div>
                 </div>
